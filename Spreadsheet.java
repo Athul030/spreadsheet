@@ -25,7 +25,7 @@ public class Spreadsheet {
 
     //retriving the values of cellIds from HashMap  
     public int getCellValue(String cellId){
-        
+        //default value is given as 0, which is following the spreadsheet convention, if no values are given, then the value of the cell is taken as zero
         Object value  = table.getOrDefault(cellId,0);
         if(value instanceof Integer) return (int)value;
         else if(value instanceof String){
