@@ -77,7 +77,7 @@ public class Spreadsheet {
                             operatorIndex++;
                         }
                     }else if(cells.matches("^\\d.*")&&cells.matches(".*[A-Za-z].*")){
-                        throw new IllegalArgumentException("Cell Ids doesnt start with digits");
+                        throw new IllegalArgumentException("Cell Ids doesn't start with digits");
                     }else{
                         output +=Integer.parseInt(cells);
                     }
